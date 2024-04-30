@@ -2,16 +2,23 @@ import logo from "./logo.svg";
 import "./App.css";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
-    <div>
-      {/* Navbar */}
-      <Navbar />
-      <h1>testing</h1>
+    <Router>
+      <div className="App">
+        {/* Navbar */}
+        <Navbar />
+        <div className="content">
+          <switch>
+            <Route path="/"></Route>
+          </switch>
+        </div>
 
-      {/* Footer  */}
-      <Footer />
-    </div>
+        {/* Footer  */}
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
