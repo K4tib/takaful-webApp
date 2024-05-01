@@ -4,6 +4,7 @@ import logo from "./logo.png";
 import facebook from "./facebook.png";
 import instagram from "./instagram.png";
 import youtube from "./youtube.png";
+import tiktok from "./tiktok.png";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
         <div className="part1">
           <div className="logoinfo">
             <a href="homepage.html">
-              <img className="logof" src={logo.png} alt="Logo" />
+              <img className="logof" src={logo} alt="Logo" />
             </a>
             <p className="hadra">
               is dedicated to providing you with funds for whatever cause you
@@ -41,7 +42,7 @@ export default function Footer() {
               <img className="f" src={youtube} alt="YouTube" />
             </a>
             <a href="tiktok.com">
-              <img className="f" src="images/icon tiktok.png" alt="TikTok" />
+              <img className="f" src={tiktok} alt="TikTok" />
             </a>
           </div>
         </div>
