@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import logo from "./logo.png";
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -8,7 +9,7 @@ export default function Navbar() {
     <header>
       <nav className="nav">
         <a href="/">
-          <img className="logo" src="images/logo.png" alt="home page" />
+          <img className="logo" src={logo} alt="home page" />
         </a>
 
         <div
