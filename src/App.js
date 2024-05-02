@@ -1,26 +1,25 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import CategoriesBody from "./components/CategoriesBody";
+
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         {/* Navbar */}
         <Navbar />
-        <div className="content">
-          <switch>
-            <Route path="/">
-              <h1>home content</h1>
-            </Route>
-          </switch>
-        </div>
+        <Routes>
+          <Route path="/" element={<CategoriesBody />} />
+        </Routes>
+        <h1>works</h1>
 
         {/* Footer  */}
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
