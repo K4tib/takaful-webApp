@@ -4,7 +4,7 @@ import CategoriesBody from "../components/CategoriesBody";
 const Categories = () => {
   return (
     <div>
-      <CardGridHeader />
+      <CardGridHeader headerTitle=""/>
       <CategoriesBody />
     </div>
   );

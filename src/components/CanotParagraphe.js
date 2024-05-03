@@ -1,6 +1,6 @@
 import React from "react";
 
-const CanotParagraphe = () => {
+const CanotParagraphe = (props) => {
   return (
     <div
       style={{
@@ -26,10 +26,7 @@ const CanotParagraphe = () => {
             borderRadius: "30px 50px 91px 51px",
           }}
         >
-          Your donation can make a world of difference to those struggling with
-          poverty. By offering a helping hand, you're not just alleviating
-          immediate suffering but also empowering communities to break the cycle
-          of poverty and build a brighter future.
+          {props.CanotParagraphe}
         </p>
       </div>
       <div style={{ flexBasis: "50%" }}>
@@ -40,7 +37,7 @@ const CanotParagraphe = () => {
             borderRadius: "50px 50px 191px 191px",
             opacity: "0px",
           }}
-          src="/img/medCanote.png"
+          src={props.imageUrl}
           alt=""
         />
       </div>

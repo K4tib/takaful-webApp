@@ -1,4 +1,4 @@
-const CardGridHeader = () => {
+const CardGridHeader = (props) => {
   return (
     <div
       style={{
@@ -14,7 +14,6 @@ const CardGridHeader = () => {
         fontSize: "30px",
         boxShadow: "0 8px 8px rgba(0,0,0,0.4)",
         position: "relative", // Add position relative to position the image
-        position: "relative",
       }}
     >
       {/* Style for the h1 */}
@@ -32,11 +31,11 @@ const CardGridHeader = () => {
           left: "20px", // Adjusted to move the h1 to the far left
         }}
       >
-        Providing Aid to the Impoverished
+        {props.headerTitle}
       </h1>
       {/* Style for the image */}
       <img
-        src="https://cdn.pixabay.com/photo/2023/08/18/15/02/cat-8198720_1280.jpg"
+        src={props.imageUrl}
         alt=""
         style={{
           width: "196.43px",
