@@ -12,7 +12,16 @@ function App() {
         {/* Navbar */}
         <Navbar />
         <Routes>
-          <Route path="/" element={<Categories />} />
+          <Route
+            path="/"
+            element={
+              <Categories
+                headerTitle="Category 1"
+                imageUrl="image-url-1"
+                CanotParagraphe="Paragraph for Category 1"
+              />
+            }
+          />
         </Routes>
         <h1>works</h1>
 
