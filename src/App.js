@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
-import CategoriesBody from "./components/CategoriesBody";
+import Categories from "./Pages/Categories";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         {/* Navbar */}
         <Navbar />
         <Routes>
-          <Route path="/" element={<CategoriesBody />} />
+          <Route path="/" element={<Categories />} />
         </Routes>
         <h1>works</h1>
 
