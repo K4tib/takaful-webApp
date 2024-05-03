@@ -2,7 +2,12 @@ import Canote from "./Canote";
 const CanoteList = () => {
   return (
     <div
-      style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        width: "100% ",
+      }}
     >
       {/* First pair of Canote components */}
       <div style={{ margin: "20px" }}>

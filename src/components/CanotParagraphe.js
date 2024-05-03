@@ -4,13 +4,15 @@ const CanotParagraphe = () => {
   return (
     <div
       style={{
-        margin: "50px 20px 0px",
+        margin: "50px 80px 0px",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
-        alignItems: "center", // Align items vertically
+        alignItems: "center",
+        width: "100%",
       }}
     >
+      {/* Set both paragraph and image to have a flexBasis of 50% */}
       <div style={{ flexBasis: "50%", paddingRight: "20px" }}>
         <p
           style={{
@@ -35,12 +37,10 @@ const CanotParagraphe = () => {
           style={{
             width: "726px",
             height: "491px",
-            top: "487px",
-            left: "914px",
             borderRadius: "50px 50px 191px 191px",
             opacity: "0px",
           }}
-          src="https://cdn.pixabay.com/photo/2023/08/18/15/02/cat-8198720_1280.jpg"
+          src="/img/medCanote.png"
           alt=""
         />
       </div>

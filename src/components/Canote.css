@@ -1,0 +1,7 @@
+/* custom.css */
+
+/* Reverse the colors of the ProgressBar */
+.custom-progress-bar .progress-bar {
+  background-color: #fb8500 !important; /* Set the color for the progress */
+  color: #0d6efd !important; /* Set the color for the text label */
+}

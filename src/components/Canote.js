@@ -1,4 +1,4 @@
-import React from "react";
+import "./Canote.css";
 import { Container, Image, ProgressBar } from "react-bootstrap";
 
 const Canote = (props) => {
@@ -6,8 +6,8 @@ const Canote = (props) => {
   return (
     <Container
       style={{
-        width: "658px",
-        height: "614px",
+        width: "500px",
+        height: "500px",
         top: "1094px",
         left: "145px",
         border: "1px solid #ccc",
@@ -35,7 +35,12 @@ const Canote = (props) => {
           />
           <h2 style={{ marginLeft: "10px" }}>{props.ProfileName}</h2>
         </div>
-        <ProgressBar now={x} label={`${x}%`} />
+        {/* Add custom CSS class to the ProgressBar */}
+        <ProgressBar
+          className="custom-progress-bar"
+          style={{ height: "70px", backgroundColor: "rgba(33, 158, 188, 0.39" }}
+          now={x}
+        />
       </div>
     </Container>
   );
