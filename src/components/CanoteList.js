@@ -11,13 +11,13 @@ const CanoteList = () => {
     >
       {/* First pair of Canote components */}
       <div style={{ margin: "20px" }}>
-        <div style={{ flexBasis: "50%", margin: "20px" }}>
+      <div style={{ flexBasis: "50%", margin: "20px" }}>
           <Canote
-            imageUrl="your-image-url"
-            title="Category Title"
-            profileImageUrl="avatar-icon-url"
-            ProfileName="Person Name"
-            percentage={75}
+            imageUrl="another-image-url"
+            title="Another Category Title"
+            profileImageUrl="another-avatar-icon-url"
+            ProfileName="Another Person Name"
+            percentage={50}
           />
         </div>
         <div style={{ flexBasis: "50%", margin: "20px" }}>
@@ -26,7 +26,7 @@ const CanoteList = () => {
             title="Another Category Title"
             profileImageUrl="another-avatar-icon-url"
             ProfileName="Another Person Name"
-            percentage={50}
+            percentage={10}
           />
         </div>
       </div>
@@ -39,16 +39,16 @@ const CanoteList = () => {
             title="Another Category Title"
             profileImageUrl="another-avatar-icon-url"
             ProfileName="Another Person Name"
-            percentage={50}
+            percentage={77}
           />
         </div>
         <div style={{ flexBasis: "50%", margin: "20px" }}>
           <Canote
-            imageUrl="your-image-url"
-            title="Category Title"
-            profileImageUrl="avatar-icon-url"
-            ProfileName="Person Name"
-            percentage={75}
+            imageUrl="another-image-url"
+            title="Another Category Title"
+            profileImageUrl="another-avatar-icon-url"
+            ProfileName="Another Person Name"
+            percentage={25}
           />
         </div>
       </div>

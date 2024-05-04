@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import Categories from "./Pages/Categories";
+import DonationForm from "./Pages/DonationForm";
 import Home from "./Home";
 import { MdMasks } from "react-icons/md";
 import {
@@ -22,6 +23,7 @@ function App() {
         {/* Navbar */}
         <Navbar />
         <Routes>
+          <Route path="/donation-form" element={<DonationForm UserPfp="" />} />
           <Route
             path="/c1"
             element={
@@ -95,13 +97,12 @@ function App() {
                 headerTitle="Other Causes "
                 iconlink={<FaQuestion />}
                 CanotParagraphe="Your donation can support a wide range of causes Whether it's funding a special event like a wedding or birthday celebration, or any other meaningful endeavor..  Every contribution, no matter how small, has the power to create positive change and make dreams a reality. "
-                bimageUrl="./images/c7.png"/>
+                bimageUrl="./images/c7.png"
+              />
             }
           />
-           <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home />} />
         </Routes>
-
-       
 
         {/* Footer  */}
         <Footer />

@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.css";
-import logo from "./logo.png";
-import facebook from "./facebook.png";
-import instagram from "./instagram.png";
-import youtube from "./youtube.png";
-import tiktok from "./tiktok.png";
+import logo from "./images/logo.png";
+import facebook from "./images/facebook.png";
+import instagram from "./images/instagram.png";
+import youtube from "./images/youtube.png";
+import tiktok from "./images/tiktok.png";
 
 export default function Footer() {
   return (
