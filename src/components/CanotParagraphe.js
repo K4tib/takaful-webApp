@@ -6,7 +6,6 @@ const CanotParagraphe = (props) => {
       style={{
         margin: "50px 80px 0px",
         display: "flex",
-        flexWrap: "wrap",
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
@@ -17,12 +16,14 @@ const CanotParagraphe = (props) => {
         <p
           style={{
             fontFamily: "Roboto",
+            height: "470px",
             fontSize: "37px",
-            fontWeight: 300,
+            fontWeight: 280,
             lineHeight: "75px",
             letterSpacing: "-0.015em",
             textAlign: "left",
-            backgroundColor: "rgba(2,48,71,0.3)",
+            background:
+              "linear-gradient(to right, rgba(2,48,71,0), rgba(2,48,71,0.07), rgba(2,48,71,0))",
             borderRadius: "30px 50px 91px 51px",
           }}
         >

@@ -34,20 +34,24 @@ const CardGridHeader = (props) => {
         {props.headerTitle}
       </h1>
       {/* Style for the image */}
-      <img
-        src={props.imageUrl}
-        alt=""
+      <div
         style={{
-          width: "196.43px",
-          height: "177px",
+          width: "170px",
+          height: "170px",
           position: "absolute",
-          top: "0",
-          right: "20px", // Adjusted to move the image to the far right
-          gap: "0px",
-          opacity: "0px",
-          borderRadius: "100px",
+          top: "15px",
+          right: "20px",
+          color: "black",
+
+          borderRadius: "50%", // Change border-radius to 50% for a circular shape
+          backgroundColor: "white", // Add white background color
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
-      />
+      >
+        <div style={{ fontSize: "100px" }}>{props.iconlink}</div>
+      </div>
     </div>
   );
 };

@@ -6,10 +6,10 @@ const Categories = (props) => {
     <div>
       <CardGridHeader
         headerTitle={props.headerTitle}
-        imageUrl={props.imageUrl}
+        iconlink={props.iconlink}
       />
       <CategoriesBody
-        imageUrl={props.imageUrl}
+        bimageUrl={props.bimageUrl}
         CanotParagraphe={props.CanotParagraphe}
       />
     </div>

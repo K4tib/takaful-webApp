@@ -11,7 +11,7 @@ const CategoriesBody = (props) => {
       }}
     >
       <CanotParagraphe
-        imageUrl={props.imageUrl}
+        imageUrl={props.bimageUrl}
         CanotParagraphe={props.CanotParagraphe}
       />
       <CanoteList />
