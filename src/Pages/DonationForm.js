@@ -1,28 +1,44 @@
-import React from 'react';
-import './DonationForm.css';
-import donation from "./donation.jpg"
+import React, { useState } from "react";
+import donation from "./donation.jpg";
+import { FaDollarSign } from "react-icons/fa6";
+import "./DonationForm.css";
 
-const DonationForm = () => {
+const DonationForm = (props) => {
+  const [isEmailValid, setIsEmailValid] = useState(true);
+
+  const handleEmailValidation = (event) => {
+    setIsEmailValid(event.target.checkValidity());
+  };
+
   return (
-    <div className="container">
-      <div className="photo gg">
-        <img src={donation} alt="Donation Photo" />
-      </div>
-      <div className="donation-form gg">
-        <div className="title">Your donation is needed</div>
-        <div className="recipient-profile">
-          <img src="recipient_profile_picture_url_here" alt="Recipient Profile" />
-          <span className="recipient-name">Recipient Name</span>
+    <div className="root">
+      <div className="container">
+        <div className="photo">
+          <img src={donation} alt="" />
         </div>
-        <input type="text" placeholder="Username" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <input type="id" placeholder="Card number" required />
-        <input type="number" placeholder="the amount" required />
-        <input className="bottom" type="submit" value="submit" />
+        <div className="donation-form">
+          <div className="title">{props.title}JKFKJBKDFKJD</div>
+          <div className="recipient-profile">
+            <img src={donation} alt="Recipient Profile" />
+            <text>{props.UserName}kjfngkjdfh</text>
+          </div>
+          <div className="inputGroup">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <input
+            type="email"
+            placeholder="Email"
+            onBlur={handleEmailValidation}
+          />
+          <input type="password" placeholder="Password" />
+          <input type="id" placeholder="Card number" required />
+          <input type="number" placeholder="the amount" required />
+          <input className="bottom" type="submit" value="submit" />
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default DonationForm;
