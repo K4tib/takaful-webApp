@@ -1,25 +1,36 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Canote from "./Canote";
 
-const CanoteList = (props) => {
-  const canotes = props.canotes.map((canoteProps, index) => {
-    if (index % 2 === 0) {
-      return (
-        <div key={index} style={{ margin: "20px" }}>
-          <div style={{ flexBasis: "50%", margin: "20px" }}>
-            <Canote {...canoteProps} />
-          </div>
-          {props.canotes[index + 1] && (
-            <div style={{ flexBasis: "50%", margin: "20px" }}>
-              <Canote {...props.canotes[index + 1]} />
-            </div>
-          )}
-        </div>
-      );
-    }
-    return null;
-  });
+const CanoteList = () => {
+  const [canotes, setCanotes] = useState([]);
 
-  return <div className="canote-list">{canotes}</div>;
+  useEffect(() => {
+    axios
+      .get("https://your-api-url.com/canotes")
+      .then((response) => {
+        setCanotes(response.data);
+      })
+      .catch((error) => {
+        console.log("Error fetching data", error);
+      });
+  }, []);
+
+  return (
+    <div className="canote-list">
+      {canotes.map((canote) => (
+        <div style={{ flexBasis: "calc(50% - 20px)", margin: "10px" }}>
+          <Canote
+            imageUrl={canote.imageUrl}
+            title={canote.title}
+            profileImageUrl={canote.profileImageUrl}
+            ProfileName={canote.ProfileName}
+            percentage={canote.percentage}
+          />
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default CanoteList;
