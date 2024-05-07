@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import donation from "./donation.jpg";
+import donation from "./handp.png";
 import { FaDollarSign } from "react-icons/fa6";
 import "./DonationForm.css";
 

@@ -13,15 +13,22 @@
   align-items: center;
   background-color: rgba(33, 158, 188, 1);
   width: 50%;
-  height: 1000px;
+  height: 800px;
   gap: 0px;
   opacity: 0px;
   margin: 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .photo img {
-  height: 100%;
-  width: 100%;
+  max-height: 500px;
+  max-width: 1197px;
+  transform: rotate(98.74deg);
 }
 
 .donation-form {
