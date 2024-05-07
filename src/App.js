@@ -15,7 +15,14 @@ import {
 } from "react-icons/fa";
 import { RiEarthquakeFill } from "react-icons/ri";
 import { TbVirusSearch } from "react-icons/tb";
+
 import c1 from "./images/c1.png";
+import c2 from "./images/c2.png";
+import c3 from "./images/c3.png";
+import c4 from "./images/c4.png";
+import c5 from "./images/c5.png";
+import c6 from "./images/c6.png";
+import c7 from "./images/c7.png";
 
 function App() {
   return (
@@ -43,7 +50,7 @@ function App() {
                 headerTitle="Providing Aid to the Impoverished"
                 iconlink={<FaHandHoldingUsd />}
                 CanotParagraphe="Your donation can make a world of difference to those struggling with poverty. By offering a helping hand, you're not just alleviating immediate suffering but also empowering communities to break the cycle of poverty and build a brighter future.."
-                bimageUrl="./images/c2.png"
+                bimageUrl={c2}
               />
             }
           />
@@ -54,7 +61,7 @@ function App() {
                 headerTitle="Supporting Victims of Natural Disasters "
                 iconlink={<RiEarthquakeFill />}
                 CanotParagraphe="When disaster strikes, your generosity can be a lifeline for those affected. Your donation provides emergency relief supplies, medical assistance, and support for rebuilding efforts. By standing in solidarity with disaster survivors, you're offering hope and helping communities recover and rebuild stronger than before... "
-                bimageUrl="./images/c3.png"
+                bimageUrl={c3}
               />
             }
           />
@@ -65,7 +72,7 @@ function App() {
                 headerTitle="Funding Scientific Research "
                 iconlink={<TbVirusSearch />}
                 CanotParagraphe="Your support for scientific research fuels innovation and discovery across a wide range of fields, your donation drives progress and expands our collective knowledge. Together, we can unlock new possibilities and shape a better world for future generations..."
-                bimageUrl="./images/c4.png"
+                bimageUrl={c4}
               />
             }
           />
@@ -76,7 +83,7 @@ function App() {
                 headerTitle="Providing Education for Underprivileged Groups "
                 iconlink={<FaGraduationCap />}
                 CanotParagraphe="Education is a powerful tool for breaking the cycle of poverty and building a brighter future.  By investing in education, you're empowering individuals to reach their full potential, opening doors to new opportunities, and creating pathways out of poverty."
-                bimageUrl="./images/c5.png"
+                bimageUrl={c5}
               />
             }
           />
@@ -87,7 +94,7 @@ function App() {
                 headerTitle="Supporting Social Programs for Disadvantaged Children: "
                 iconlink={<FaChild />}
                 CanotParagraphe="Every child deserves a chance to thrive and reach their full potential. Your donation supports social programs that provide disadvantaged children with essential resources, mentorship, and opportunities for growth.."
-                bimageUrl="/images/c6.png"
+                bimageUrl={c6}
               />
             }
           />
@@ -98,7 +105,7 @@ function App() {
                 headerTitle="Other Causes "
                 iconlink={<FaQuestion />}
                 CanotParagraphe="Your donation can support a wide range of causes Whether it's funding a special event like a wedding or birthday celebration, or any other meaningful endeavor..  Every contribution, no matter how small, has the power to create positive change and make dreams a reality. "
-                bimageUrl="./images/c7.png"
+                bimageUrl={c7}
               />
             }
           />

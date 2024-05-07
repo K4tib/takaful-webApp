@@ -20,7 +20,7 @@ const DonationForm = (props) => {
           <div className="title">{props.title}</div>
           <div className="recipient-profile">
             <img src={donation} alt="Recipient Profile" />
-            <text>{props.UserName}kjfngkjdfh</text>
+            <text>{props.UserName}</text>
           </div>
           <div className="inputGroup">
             <input type="text" placeholder="First Name" />
