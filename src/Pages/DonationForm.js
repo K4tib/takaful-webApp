@@ -17,7 +17,7 @@ const DonationForm = (props) => {
           <img src={donation} alt="" />
         </div>
         <div className="donation-form">
-          <div className="title">{props.title}JKFKJBKDFKJD</div>
+          <div className="title">{props.title}</div>
           <div className="recipient-profile">
             <img src={donation} alt="Recipient Profile" />
             <text>{props.UserName}kjfngkjdfh</text>

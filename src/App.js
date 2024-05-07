@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa";
 import { RiEarthquakeFill } from "react-icons/ri";
 import { TbVirusSearch } from "react-icons/tb";
+import c1 from "./images/c1.png";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
                 headerTitle="Disease Research and Treatment"
                 iconlink={<MdMasks />}
                 CanotParagraphe="Your donations drive groundbreaking research and innovative treatments, fighting diseases... From funding advances in cancer, infectious disease treatments and any other type of disease, your support makes a tangible difference. "
-                bimageUrl="./images/c1.png"
+                bimageUrl={c1}
               />
             }
           />
